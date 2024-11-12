@@ -11,6 +11,11 @@
     - 15 minutes cooldown between consecutive read requests
 
 3.2 Designing HBase Schema for [Twitter](x.com) posts. 
+- how leverage HBase in general:
+    - Hadoop/HDFS Integration: HBase supports HDFS out of the box as its distributed file system
+    - MapReduce: HBase supports massively parallelized processing via MapReduce for using HBase as both source and sink.
+    - Java Client API: HBase supports an easy to use Java API for programmatic access
+    - *If you have hundreds of millions or billions of rows, then HBase is a good candidate. If you only have a few thousand/million rows, then using a traditional RDBMS might be a better choice*
 
 3.3 Ingesting Data into HBase
 
